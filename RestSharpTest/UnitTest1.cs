@@ -38,9 +38,19 @@ namespace RestSharpTest
             var result = response.Data.author;
             Assert.AreEqual(result, "Carl");
         }
-
+        
         [Test]
         public void Test3()
+        {
+            var client = new RestClient("https://reqres.in/api/");
+            var request = new RestRequest("root", Method.GET);
+            var response = client.ExecuteGetAsync<Root>(request).GetAwaiter().GetResult();
+            var result = response.Data.per_page;
+            Assert.AreEqual(result, 6);
+        }
+
+        [Test]
+        public void Test4()
         {
             var client = new RestClient("https://reqres.in/api/");
             var request = new RestRequest("root/{page}", Method.GET);
