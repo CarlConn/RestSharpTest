@@ -1,4 +1,6 @@
+using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using NUnit.Framework;
 using RestSharp;
@@ -55,14 +57,12 @@ namespace RestSharpTest
             var client = new RestClient("https://reqres.in/api/");
             var request = new RestRequest("root/{page}", Method.GET);
             request.AddUrlSegment("page", 1);
-            var response = client.ExecuteGetAsync<List<Root>>(request).GetAwaiter().GetResult();
-            JArray jArray = JArray.Parse(response.Content);
-            foreach (var content in jArray.Children<JObject>())
+            var response = client.ExecuteGetAsync<Root>(request).GetAwaiter().GetResult();
+            //Root obj = JsonConvert.DeserializeObject<Root>(response.Content);
+            //JArray jArray = JArray.Parse(response.Content);
+            foreach (var content in response.Data.data)
             {
-                foreach (JProperty property in content.Properties())
-                {
-                    var x = property.Name;
-                }
+                Console.WriteLine(content.color);
             }
             
             //Assert.AreEqual(result, "Carl");
