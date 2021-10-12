@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\caco1743.CLUB_260_WA_SEA\\RiderProjects\\RestSharpTest\\RestSharpTest\\RestSharpTest.csproj": {}
+    "C:\\Users\\Admin\\RiderProjects\\RestSharpTest\\RestSharpTest\\RestSharpTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\caco1743.CLUB_260_WA_SEA\\RiderProjects\\RestSharpTest\\RestSharpTest\\RestSharpTest.csproj": {
+    "C:\\Users\\Admin\\RiderProjects\\RestSharpTest\\RestSharpTest\\RestSharpTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\caco1743.CLUB_260_WA_SEA\\RiderProjects\\RestSharpTest\\RestSharpTest\\RestSharpTest.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\RiderProjects\\RestSharpTest\\RestSharpTest\\RestSharpTest.csproj",
         "projectName": "RestSharpTest",
-        "projectPath": "C:\\Users\\caco1743.CLUB_260_WA_SEA\\RiderProjects\\RestSharpTest\\RestSharpTest\\RestSharpTest.csproj",
-        "packagesPath": "C:\\Users\\caco1743.CLUB_260_WA_SEA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\caco1743.CLUB_260_WA_SEA\\RiderProjects\\RestSharpTest\\RestSharpTest\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\RiderProjects\\RestSharpTest\\RestSharpTest\\RestSharpTest.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\RiderProjects\\RestSharpTest\\RestSharpTest\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\caco1743.CLUB_260_WA_SEA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -42,15 +45,15 @@
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[16.9.4, )"
+              "version": "[16.11.0, )"
             },
             "NUnit": {
               "target": "Package",
-              "version": "[3.13.1, )"
+              "version": "[3.13.2, )"
             },
             "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[3.17.0, )"
+              "version": "[4.0.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -61,8 +64,10 @@
               "version": "[106.12.0, )"
             },
             "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[3.0.2, )"
+              "version": "[3.1.0, )"
             }
           },
           "imports": [
@@ -80,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

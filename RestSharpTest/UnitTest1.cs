@@ -11,61 +11,64 @@ namespace RestSharpTest
 {
     public class Tests
     {
-        [SetUp]
-        public void Setup()
-        {
-       
-
-        }
-
+        private string _url = "https://reqres.in/api/";
+        
+        /// <summary>
+        /// Imagine this to be the number
+        /// of associates in the json file
+        /// </summary>
         [Test]
         public void Test1()
-        { 
-            var client = new RestClient("http://localhost:3000/");
-            var request = new RestRequest("posts/{postid}", Method.GET);
-            request.AddUrlSegment("postid", 1);
-            var response = client.ExecuteGetAsync<Posts>(request).GetAwaiter().GetResult();
-            var result = response.Data.author;
-            Assert.AreEqual(result, "typicode");
+        {
+            int expectedNumberOfDataArray = 6;
+            int actualNumberOfDataArray = 0;
+            
+            var client = new RestClient(_url);
+            var request = new RestRequest("root/", Method.GET);
+            var response = client.ExecuteGetAsync<Root>(request).GetAwaiter().GetResult();
+            actualNumberOfDataArray = response.Data.data.Count;
+            
+            Assert.AreEqual(expectedNumberOfDataArray, actualNumberOfDataArray);
         }
         
+/// <summary>
+/// Imagine this to recall the
+/// members data from the json file
+/// </summary>
         [Test]
         public void Test2()
         {
+            int expectedPerPage = 6;
+            int actualPerPage = 0;
             
-            var client = new RestClient("http://localhost:3000/");
-            var request = new RestRequest("posts/{postid}", Method.GET);
-            request.AddUrlSegment("postid", 2);
-            var response = client.ExecuteGetAsync<Posts>(request).GetAwaiter().GetResult();
-            var result = response.Data.author;
-            Assert.AreEqual(result, "Carl");
+            var client = new RestClient(_url);
+            var request = new RestRequest("/root", Method.GET);
+            var response = client.ExecuteGetAsync<Root>(request).GetAwaiter().GetResult();
+            actualPerPage = response.Data.per_page;
+            
+            Assert.AreEqual(expectedPerPage, actualPerPage);
         }
-        
+
+/// <summary>
+/// Access data in a given
+/// data object
+/// </summary>
         [Test]
         public void Test3()
         {
-            var client = new RestClient("https://reqres.in/api/");
-            var request = new RestRequest("root", Method.GET);
-            var response = client.ExecuteGetAsync<Root>(request).GetAwaiter().GetResult();
-            var result = response.Data.per_page;
-            Assert.AreEqual(result, 6);
-        }
-
-        [Test]
-        public void Test4()
-        {
-            var client = new RestClient("https://reqres.in/api/");
+            string expectedColor = "#98B2D1";
+            string actualColor = null;
+            
+            var client = new RestClient(_url);
             var request = new RestRequest("root/{page}", Method.GET);
             request.AddUrlSegment("page", 1);
             var response = client.ExecuteGetAsync<Root>(request).GetAwaiter().GetResult();
-            //Root obj = JsonConvert.DeserializeObject<Root>(response.Content);
-            //JArray jArray = JArray.Parse(response.Content);
             foreach (var content in response.Data.data)
             {
-                Console.WriteLine(content.color);
+                actualColor = content.color;
             }
             
-            //Assert.AreEqual(result, "Carl");
+            Assert.AreEqual(expectedColor, actualColor);
         }
     }
 }

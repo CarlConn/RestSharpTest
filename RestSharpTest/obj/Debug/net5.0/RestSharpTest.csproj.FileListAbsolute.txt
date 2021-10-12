@@ -13,7 +13,6 @@ C:\Users\Admin\RiderProjects\RestSharpTest\RestSharpTest\bin\Debug\net5.0\RestSh
 C:\Users\Admin\RiderProjects\RestSharpTest\RestSharpTest\bin\Debug\net5.0\ref\RestSharpTest.dll
 C:\Users\Admin\RiderProjects\RestSharpTest\RestSharpTest\bin\Debug\net5.0\RestSharpTest.pdb
 C:\Users\Admin\RiderProjects\RestSharpTest\RestSharpTest\bin\Debug\net5.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
-C:\Users\Admin\RiderProjects\RestSharpTest\RestSharpTest\bin\Debug\net5.0\Microsoft.DotNet.InternalAbstractions.dll
 C:\Users\Admin\RiderProjects\RestSharpTest\RestSharpTest\bin\Debug\net5.0\Microsoft.TestPlatform.CoreUtilities.dll
 C:\Users\Admin\RiderProjects\RestSharpTest\RestSharpTest\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
 C:\Users\Admin\RiderProjects\RestSharpTest\RestSharpTest\bin\Debug\net5.0\Microsoft.TestPlatform.CommunicationUtilities.dll
@@ -24,7 +23,6 @@ C:\Users\Admin\RiderProjects\RestSharpTest\RestSharpTest\bin\Debug\net5.0\Newton
 C:\Users\Admin\RiderProjects\RestSharpTest\RestSharpTest\bin\Debug\net5.0\NuGet.Frameworks.dll
 C:\Users\Admin\RiderProjects\RestSharpTest\RestSharpTest\bin\Debug\net5.0\nunit.framework.dll
 C:\Users\Admin\RiderProjects\RestSharpTest\RestSharpTest\bin\Debug\net5.0\RestSharp.dll
-C:\Users\Admin\RiderProjects\RestSharpTest\RestSharpTest\bin\Debug\net5.0\System.Xml.XPath.XmlDocument.dll
 C:\Users\Admin\RiderProjects\RestSharpTest\RestSharpTest\bin\Debug\net5.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
 C:\Users\Admin\RiderProjects\RestSharpTest\RestSharpTest\bin\Debug\net5.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
 C:\Users\Admin\RiderProjects\RestSharpTest\RestSharpTest\bin\Debug\net5.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
@@ -202,3 +200,4 @@ C:\Users\caco1743.CLUB_260_WA_SEA\RiderProjects\RestSharpTest\RestSharpTest\obj\
 C:\Users\caco1743.CLUB_260_WA_SEA\RiderProjects\RestSharpTest\RestSharpTest\obj\Debug\net5.0\ref\RestSharpTest.dll
 C:\Users\caco1743.CLUB_260_WA_SEA\RiderProjects\RestSharpTest\RestSharpTest\obj\Debug\net5.0\RestSharpTest.pdb
 C:\Users\caco1743.CLUB_260_WA_SEA\RiderProjects\RestSharpTest\RestSharpTest\obj\Debug\net5.0\RestSharpTest.genruntimeconfig.cache
+C:\Users\Admin\RiderProjects\RestSharpTest\RestSharpTest\bin\Debug\net5.0\testcentric.engine.metadata.dll
